@@ -1,0 +1,239 @@
+@font-face {
+  font-family: Cheeseusaceu;
+  src: url(../../assets/fonts/cheeseusaceu.ttf); }
+@font-face {
+  font-family: Gagalin;
+  src: url(../../assets/fonts/Gagalin.ttf); }
+@font-face {
+  font-family: Archive;
+  src: url(../../assets/fonts/Archive.otf); }
+.slider {
+  margin: 50px auto;
+  width: 90%;
+  height: 400px;
+  overflow: hidden;
+  border: 10px solid;
+  position: relative;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426; }
+
+.slider-photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: round 18s infinite;
+  opacity: 0; }
+
+@keyframes round {
+  25% {
+    opacity: 1; }
+  40% {
+    opacity: 0; } }
+img:nth-child(1) {
+  animation-delay: 12s; }
+
+img:nth-child(2) {
+  animation-delay: 6s; }
+
+img:nth-child(3) {
+  animation-delay: 0s; }
+
+@media only screen and (max-width: 993px) {
+  .slider {
+    width: 60%; } }
+@media only screen and (max-width: 700px) {
+  .slider {
+    width: 90%; } }
+@media only screen and (max-width: 550px) {
+  .slider {
+    display: none; } }
+body, html {
+  height: 100%;
+  color: #000000;
+  line-height: 1.8;
+  font-family: Cheeseusaceu;
+  font-size: 1.05em;
+  background: #f9f9f9; }
+  body *:focus, html *:focus {
+    outline: none; }
+  body h1, body h2, body h3, body h4, body h5, body h6, html h1, html h2, html h3, html h4, html h5, html h6 {
+    font-family: Gagalin; }
+  body h1, html h1 {
+    font-size: 48px; }
+  body a, html a {
+    text-decoration: none; }
+    body a span, html a span {
+      border-bottom: 2px dotted;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+      body a span:hover, html a span:hover {
+        color: #FFA500;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
+  body .w3-navbar li a, html .w3-navbar li a {
+    text-transform: uppercase; }
+  body .w3-top, html .w3-top {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-family: Archive; }
+    body .w3-top .w3-padding-large, html .w3-top .w3-padding-large {
+      font-size: 1.5em; }
+    body .w3-top .w3-right a, html .w3-top .w3-right a {
+      display: inline-block;
+      padding: 16px 0;
+      font-size: 1.2em;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+      body .w3-top .w3-right a:nth-of-type(odd), html .w3-top .w3-right a:nth-of-type(odd) {
+        padding-right: 5px; }
+      body .w3-top .w3-right a:nth-of-type(even), html .w3-top .w3-right a:nth-of-type(even) {
+        padding-right: 20px; }
+    body .w3-top a, html .w3-top a {
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+      body .w3-top a:hover, html .w3-top a:hover {
+        background: transparent;
+        color: #FFA500;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
+  body .paragraph, html .paragraph {
+    font-size: 1.3rem;
+    margin-bottom: 2em; }
+  body .bgimg-1, body .bgimg-2, body .bgimg-3, html .bgimg-1, html .bgimg-2, html .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body .bgimg-1 .section-header, body .bgimg-2 .section-header, body .bgimg-3 .section-header, html .bgimg-1 .section-header, html .bgimg-2 .section-header, html .bgimg-3 .section-header {
+      text-transform: uppercase;
+      font-family: Archive;
+      font-size: 3.6em; }
+  body .black-layer, html .black-layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  body .w3-card-12 .image-wrapper, html .w3-card-12 .image-wrapper {
+    overflow: hidden; }
+    body .w3-card-12 .image-wrapper img, html .w3-card-12 .image-wrapper img {
+      width: 100%;
+      display: block;
+      float: left;
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -webkit-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1); }
+  body .w3-card-12:hover img, html .w3-card-12:hover img {
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    -moz-transform: scale3d(1.2, 1.2, 1);
+    -ms-transform: scale3d(1.2, 1.2, 1);
+    -o-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1); }
+  body .bgimg-1, html .bgimg-1 {
+    background-image: url("../../assets/images/first.jpg");
+    min-height: 100%;
+    color: #ffffff;
+    font-weight: bold; }
+    body .bgimg-1 .banner-wrapper, html .bgimg-1 .banner-wrapper {
+      white-space: nowrap; }
+      body .bgimg-1 .banner-wrapper .banner-text, html .bgimg-1 .banner-wrapper .banner-text {
+        font-family: Gagalin;
+        font-size: 4.4vw; }
+  body .bgimg-2, html .bgimg-2 {
+    background-image: url("../../assets/images/second.jpg");
+    min-height: 500px; }
+  body .bgimg-3, html .bgimg-3 {
+    background-image: url("../../assets/images/third.jpg");
+    min-height: 500px; }
+  body .w3-wide, html .w3-wide {
+    letter-spacing: 10px; }
+  body .w3-hover-opacity, html .w3-hover-opacity {
+    cursor: pointer; }
+  body .w3-content, html .w3-content {
+    max-width: 1280px; }
+  body #googleMap, html #googleMap {
+    width: 100%;
+    height: 500px; }
+  body .description, html .description {
+    margin-top: 3em; }
+  body .personal-photo, html .personal-photo {
+    margin-top: 2em;
+    width: 300px; }
+  body .contact-info, html .contact-info {
+    display: block;
+    margin-bottom: .3em;
+    font-size: 1.2rem; }
+    body .contact-info .contact-icon, html .contact-info .contact-icon {
+      height: 30px;
+      margin-bottom: -8px; }
+  body footer, html footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffffff; }
+    body footer p:nth-of-type(even), html footer p:nth-of-type(even) {
+      margin-top: 0;
+      font-size: .8em; }
+    body footer p:nth-of-type(odd), html footer p:nth-of-type(odd) {
+      margin-bottom: 0;
+      font-size: 1.1em; }
+      body footer p:nth-of-type(odd) .copyright-icon, html footer p:nth-of-type(odd) .copyright-icon {
+        height: 20px;
+        margin-bottom: -.2em; }
+
+@media only screen and (max-width: 1024px) {
+  body .bgimg-1, html .bgimg-1, body .bgimg-2, html .bgimg-2, body .bgimg-3, html .bgimg-3 {
+    background-attachment: scroll; }
+
+  .w3-card-12 {
+    margin-top: 1em; } }
+@media only screen and (max-width: 650px) {
+  .w3-navbar li.w3-right {
+    float: right !important; }
+
+  .w3-navbar li:not(.w3-opennav) {
+    width: inherit !important; } }
+@media only screen and (max-width: 500px) {
+  html h1, body h1 {
+    font-size: 40px; } }
+@media only screen and (max-width: 400px) {
+  .image-wrapper img {
+    height: 230px; }
+
+  body .bgimg-1 .section-header, html .bgimg-1 .section-header, body .bgimg-2 .section-header, html .bgimg-2 .section-header, body .bgimg-3 .section-header, html .bgimg-3 .section-header {
+    font-size: 2em; }
+
+  html .contact-info, body .contact-info {
+    font-size: .9rem; }
+  html h1, body h1 {
+    font-size: 30px; }
+
+  body .w3-top .w3-padding-large,
+  html .w3-top .w3-padding-large {
+    font-size: 1em;
+    margin-top: 7px; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,59 @@
+//how many images we have
+$slides: 3;
+
+// how much we want each slide to show
+$time_per_slide: 6;
+
+// total time needed for full animation
+$total_animation_time: $time_per_slide * $slides;
+
+.slider {
+  margin   : 50px auto;
+  width    : 90%;
+  height   : 400px;
+  overflow : hidden;
+  border   : 10px solid;
+  position : relative;
+
+  border-top-color    : #856036;
+  border-left-color   : #5d4426;
+  border-bottom-color : #856036;
+  border-right-color  : #5d4426;
+}
+
+.slider-photo {
+  position  :absolute;
+  left      : 0;
+  top       : 0;
+  animation : round #{$total_animation_time}s infinite;
+  opacity   : 0;
+  
+}
+@keyframes round{   
+  25% { opacity : 1; }
+  40% { opacity : 0; }
+} 
+
+@for $index from 1 to $slides + 1 {
+  img:nth-child(#{$index}) {
+    animation-delay:#{$total_animation_time - $time_per_slide * $index}s
+  }
+}
+   
+@media only screen and (max-width: 993px) {
+    .slider {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .slider {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .slider {
+        display: none;
+    }
+}
